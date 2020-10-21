@@ -29,6 +29,9 @@ a {
   font-family: "Poppins";
   font-size: 30px;
 }
+a:hover{
+  color: orange;
+}
 .container {
   margin: auto;
   padding: 0 auto;
