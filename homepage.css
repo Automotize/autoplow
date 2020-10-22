@@ -29,7 +29,7 @@ a {
   font-family: "Poppins";
   font-size: 30px;
 }
-a:hover{
+a:hover,#currrentpage {
   color: orange;
 }
 .container {
@@ -38,6 +38,3 @@ a:hover{
   background-color: rgb(229, 245, 245);
   font-size: 22px;
 }
-
-
-

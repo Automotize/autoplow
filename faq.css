@@ -106,7 +106,7 @@ a {
   font-family: "Poppins";
   font-size: 30px;
 }
-a:hover{
+a:hover,#currrentpage {
   color: orange;
 }
 .container1 {
