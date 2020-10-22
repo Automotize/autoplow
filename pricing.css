@@ -68,25 +68,17 @@ nav a:hover,
 }
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
   height: 200%;
 }
-.card {
-  height: 85%;
-  width: 30%;
-  background-color: rgb(235, 247, 253);
-  border-radius: 15px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 10px 10px 10px rgb(202, 202, 202);
-}
+
 .card-title {
   font-size: 1.5rem;
-  font-weight: lighter;
-  margin-bottom: 1rem;
+  font-weight: bolder;
+  margin-bottom: 0.75rem;
 }
 .card-price {
   font-size: 3rem;
@@ -114,19 +106,45 @@ h2 > span {
   text-align: center;
   font-size: auto;
 }
+#card1 .card-btn {
+  margin-top: 105px;
+}
+#card2 .card-btn {
+  margin: 1rem;
+}
+#card3 .card-btn {
+  margin-top: 60px;
+}
 .card-btn {
-  margin-top: 1rem;
-  width: 70%;
+  width: 80%;
   background-color: transparent;
   border: 1px solid rebeccapurple;
   color: black;
   font-size: 1.5rem;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #card1 .card-btn:hover,
 #card3 .card-btn:hover,
-.active {
+#card2 .card-btn.active {
   background-color: rebeccapurple;
+}
+#card1:hover,
+#card2:hover,
+#card3:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.card {
+  height: 600px;
+  width: 300px;
+  background-color: rgb(235, 247, 253);
+  border-radius: 18px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 1px;
 }

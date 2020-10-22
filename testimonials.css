@@ -29,7 +29,8 @@ a {
   font-family: "Poppins";
   font-size: 30px;
 }
-a:hover,#currrentpage {
+a:hover,
+#currrentpage {
   color: orange;
 }
 .container {
@@ -37,4 +38,50 @@ a:hover,#currrentpage {
   padding: 0 auto;
   background-color: rgb(229, 245, 245);
   font-size: 22px;
+}
+
+.testimonials {
+  padding: 40px 0;
+  color: #434343;
+  text-align: center;
+}
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border {
+  width: 160px;
+  height: 5px;
+  background: rgb(229, 245, 245);
+  margin: 26px auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+  background: #f1f1f1;
+}
+.testimonial {
+  background: #fff;
+  padding: 30px;
+}
+.testimonial__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
 }

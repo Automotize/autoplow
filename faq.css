@@ -20,10 +20,12 @@ section {
   justify-content: center;
 }
 .container2 {
-  width: 90%;
-  max-width: 100rem;
+  width: 90vw;
+  height: auto;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: #eceff4;
 }
 
 .acc-link {
@@ -106,7 +108,8 @@ a {
   font-family: "Poppins";
   font-size: 30px;
 }
-a:hover,#currrentpage {
+a:hover,
+#currrentpage {
   color: orange;
 }
 .container1 {
