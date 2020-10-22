@@ -46,7 +46,7 @@ a:hover,
   text-align: center;
 }
 .inner {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
@@ -63,6 +63,7 @@ a:hover,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80vw;
 }
 .col {
   flex: 33.33%;
@@ -76,8 +77,8 @@ a:hover,
   padding: 30px;
 }
 .testimonial__image {
-  width: 120px;
-  height: 120px;
+  width: 50%;
+  height: 65%;
   border-radius: 50%;
 }
 .name {
