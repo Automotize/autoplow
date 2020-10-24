@@ -4,41 +4,7 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
 
-nav {
-  flex: 1;
-  text-align: right;
-}
-nav ul {
-  display: inline-block;
-  list-style: none;
-}
-nav ul li {
-  display: inline-block;
-  margin-right: 40px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-family: "Poppins";
-  font-size: 30px;
-}
-a:hover,
-#currrentpage {
-  color: orange;
-}
-.container {
-  margin: auto;
-  padding: 0 auto;
-  background-color: rgb(229, 245, 245);
-  font-size: 22px;
-}
 
 .testimonials {
   padding: 40px 0;
@@ -63,7 +29,8 @@ a:hover,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80vw;
+  width: auto;
+  margin: 0;
 }
 .col {
   flex: 33.33%;

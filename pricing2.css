@@ -4,6 +4,46 @@
   box-sizing: border-box;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #5e81ac;
+  font-family: "Poppins";
+  font-size: 30px;
+}
+a:hover,#currrentpage {
+  color: orange;
+}
+.container {
+  margin: auto;
+  padding: 0 auto;
+  background-color:#e5e9f0;
+  font-size: 22px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 *:focus {
   outline: none;
 }
@@ -33,39 +73,6 @@ h1 {
   font-size: 40px;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-nav {
-  flex: 1;
-  text-align: right;
-}
-nav ul {
-  display: inline-block;
-}
-nav ul li {
-  display: inline-block;
-  margin-right: 40px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 30px;
-}
-nav a:hover,
-#currrentpage {
-  color: orange;
-}
-.container {
-  margin: auto;
-  padding: 0 auto;
-  background-color: rgb(229, 245, 245);
-  font-size: 22px;
-}
 .cards {
   display: flex;
   justify-content: space-around;
@@ -118,8 +125,8 @@ h2 > span {
 .card-btn {
   width: 80%;
   background-color: transparent;
-  border: 1px solid rebeccapurple;
-  color: black;
+  border: 1px solid #7D99BC;
+  color: #EEF0F5;
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: 10px;
@@ -128,7 +135,7 @@ h2 > span {
 #card1 .card-btn:hover,
 #card3 .card-btn:hover,
 #card2 .card-btn.active {
-  background-color: rebeccapurple;
+  background-color: #7D99BC;
 }
 #card1:hover,
 #card2:hover,
@@ -139,7 +146,7 @@ h2 > span {
 .card {
   height: 600px;
   width: 300px;
-  background-color: rgb(235, 247, 253);
+  background-color:#BAC7DA;
   border-radius: 18px;
   padding: 1rem;
   text-align: center;
@@ -148,3 +155,7 @@ h2 > span {
   cursor: pointer;
   margin: 1px;
 }
+
+
+
+

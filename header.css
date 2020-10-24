@@ -25,16 +25,22 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #5e81ac;
   font-family: "Poppins";
   font-size: 30px;
 }
-a:hover,#currrentpage {
+a:hover,
+#currrentpage {
   color: orange;
 }
 .container {
   margin: auto;
   padding: 0 auto;
-  background-color: rgb(229, 245, 245);
+  background-color: #e5e9f0;
   font-size: 22px;
+  height: 125.367;
 }
+img {
+  height: 79.406px;
+}
+
