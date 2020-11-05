@@ -136,12 +136,14 @@ h2 > span {
 #card3 .card-btn:hover,
 #card2 .card-btn:hover {
   background-color: #BAC7DA;
+  cursor: pointer;
 }
 #card1:hover,
 #card2:hover,
 #card3:hover {
   transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  cursor: default;
 }
 .card {
   height: 600px;

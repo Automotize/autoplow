@@ -64,7 +64,7 @@ section {
 
 .answer p {
   font-size: 1.4rem;
-  color: rgb(138, 145, 162);
+  color: rgb(0, 0, 0);
 }
 .acc-item:target .answer {
   max-height: 20rem;
