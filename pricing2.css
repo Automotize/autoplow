@@ -124,7 +124,7 @@ h2 > span {
 }
 .card-btn {
   width: 80%;
-  background-color: transparent;
+  background-color: #7D99BC;
   border: 1px solid #7D99BC;
   color: #EEF0F5;
   font-size: 1.5rem;
@@ -134,8 +134,8 @@ h2 > span {
 
 #card1 .card-btn:hover,
 #card3 .card-btn:hover,
-#card2 .card-btn.active {
-  background-color: #7D99BC;
+#card2 .card-btn:hover {
+  background-color: #BAC7DA;
 }
 #card1:hover,
 #card2:hover,
