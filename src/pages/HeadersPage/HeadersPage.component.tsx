@@ -9,14 +9,15 @@ import { C4WithCompanyMission } from '../../layout/Footer';
 import { ContactSplitWithImage } from '../../components/ContactSections';
 import { LargeImages } from '../../components/TeamSections';
 import { ComparsionTable } from '../../components/PricingSections';
+import TestComponent from '../../components/TestComponent';
 
 const HeadersPage = () => {
   return (
     <div className="headers">
       <SimpleHeader />
       <GridList
-        title="All-in-one platform"
-        description="Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec."
+        title="Autoplow"
+        description="New description"
         color="gray"
         data={data}
       />
@@ -40,6 +41,13 @@ const HeadersPage = () => {
       <div className="u-margin-top-medium" />
       <ComparsionTable />
       <C4WithCompanyMission />
+      <TestComponent />
+      <TestComponent />
+      <TestComponent />
+      <TestComponent />
+      <TestComponent />
+      <TestComponent />
+      <TestComponent />
     </div>
   );
 };

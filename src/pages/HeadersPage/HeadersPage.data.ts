@@ -3,7 +3,7 @@ export const data = [
     id: '1',
     title: 'Invite team members',
     description:
-      'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      'Get the best plow in the marketGet the best plow in the market',
   },
   {
     id: '2',
