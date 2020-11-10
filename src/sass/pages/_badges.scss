@@ -1,0 +1,9 @@
+.badges {
+  grid-column: center-start/center-end;
+  margin: 5rem 0;
+  &__demo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

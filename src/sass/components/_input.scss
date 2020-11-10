@@ -1,0 +1,185 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    line-height: var(--leading-5);
+    width: 100%;
+    display: block;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    font-family: inherit;
+    font-size: var(--text-sm);
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
+      border-color: #a4cafe;
+    }
+    &::placeholder {
+      color: var(--color-gray-400);
+    }
+    &--leading {
+    }
+    &--trailing {
+      border-bottom-right-radius: 0rem;
+      border-top-right-radius: 0rem;
+      z-index: 1;
+      &:focus {
+        box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
+      }
+    }
+    &--trailing-inline {
+      padding-right: 0.4rem;
+      border-right-width: 0px;
+    }
+  }
+  label {
+    color: var(--color-gray-700);
+    line-height: var(--leading-5);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    display: block;
+    &.input__corner-hint {
+      color: var(--color-gray-500);
+      font-weight: 400;
+    }
+  }
+  &__trailing-icon {
+    position: absolute;
+    top: 52%;
+    right: 2px;
+    color: var(--color-gray-400);
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+    transform: translateY(-50%);
+  }
+  p {
+    color: var(--color-gray-500);
+    font-size: var(--text-sm);
+    margin-top: 0.8rem;
+  }
+  &--invalid {
+    p {
+      color: var(--color-red-600);
+    }
+    input {
+      border-color: var(--color-red-300);
+      &:focus {
+        border-color: var(--color-red-300);
+
+        box-shadow: 0 0 0 3px rgba(248, 180, 180, 0.45);
+      }
+      position: relative;
+    }
+    svg {
+      position: absolute;
+      top: 52%;
+      right: 2px;
+      color: var(--color-red-500);
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.6rem;
+      transform: translateY(-50%);
+    }
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    margin-top: 0.4rem;
+
+    &--focus {
+      box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
+      border-radius: 0.6rem;
+
+      input {
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+      .input__leading-add-on--inline {
+        border-color: #a4cafe;
+      }
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__leading-add-on {
+    position: relative;
+    display: block;
+    height: 100%;
+    font-size: var(--text-sm);
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-500);
+    padding: 0 1.2rem;
+    height: 38px;
+    display: flex;
+    border-width: 1px;
+    border-color: var(--color-gray-300);
+    border-style: solid;
+    border-bottom-left-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+    border-right-width: 0;
+    ~ input {
+      border-bottom-left-radius: 0rem;
+      border-top-left-radius: 0rem;
+      z-index: 1;
+    }
+    &--inline {
+      background-color: white;
+      padding-right: 0;
+      z-index: 2;
+      border-right-width: 0;
+
+      //   margin-top: 0.1rem;
+      ~ input {
+        padding-left: 0.4rem;
+        border-left-width: 0px;
+        // clip-path: inset(-5px -5px -5px 0px);
+      }
+      p {
+        padding-top: 0.1rem;
+      }
+    }
+  }
+
+  &__trailing-add-on {
+    position: relative;
+    display: block;
+    height: 100%;
+    font-size: var(--text-sm);
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-500);
+    padding: 0 1.2rem;
+    height: 38px;
+    display: flex;
+    border-width: 1px;
+    border-color: var(--color-gray-300);
+    border-style: solid;
+    border-bottom-right-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    border-left-width: 0;
+
+    &--inline {
+      background-color: white;
+      padding-left: 0;
+      z-index: 2;
+      border-left-width: 0;
+
+      //   margin-top: 0.1rem;
+      ~ input {
+        // clip-path: inset(-5px -5px -5px 0px);
+      }
+      p {
+        padding-top: 0.1rem;
+      }
+    }
+  }
+}

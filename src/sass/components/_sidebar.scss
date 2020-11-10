@@ -1,0 +1,130 @@
+.sidebar {
+  height: 100vh;
+  &__hamburger {
+    display: none;
+    @include respond(tab-port) {
+      display: block;
+      position: absolute;
+      margin-top: 1rem;
+      left: 1rem;
+      width: 3rem;
+      width: 3rem;
+      background-color: transparent;
+      border: none;
+      stroke: var(--color-gray-500);
+      outline: none;
+    }
+    // z-index: -1;
+  }
+  &__content {
+    position: relative;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--color-gray-400);
+    z-index: 200;
+  }
+  // @include respond(tab-port) {
+  //   position: absolute;
+  // }
+
+  &__exit {
+    @include respond(tab-port) {
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      display: block;
+      left: 31.5rem;
+      top: 1.5rem;
+      z-index: 20;
+      stroke: white;
+    }
+  }
+
+  &__overlay {
+    display: none;
+    @include respond(tab-port) {
+      display: block;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(120, 128, 138, 0.4);
+      position: absolute;
+      z-index: 2;
+    }
+
+    // z-index: -1;
+  }
+  &__logo {
+    display: block;
+    height: 6rem;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    z-index: 2;
+    margin-bottom: 2rem;
+  }
+
+  &__profile {
+    z-index: 2;
+    border-top: 1px solid var(--color-gray-400);
+    padding: 1rem;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+
+    &-image {
+      height: 3.5rem;
+      border-radius: 50%;
+      width: auto;
+      margin-right: 1.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: var(--color-gray-900);
+    }
+  }
+  &__item {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    p {
+      font-size: 1.4rem;
+      color: var(--color-gray-600);
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    svg {
+      stroke: var(--color-gray-500);
+      height: 2.5rem;
+      width: auto;
+    }
+    &:hover {
+      background-color: var(--color-gray-200);
+      p {
+        color: var(--color-gray-900);
+      }
+      svg {
+        stroke: var(--color-gray-600);
+        height: 2.5rem;
+        width: auto;
+      }
+    }
+    &--selected {
+      background-color: var(--color-gray-200);
+      p {
+        color: var(--color-gray-900);
+      }
+      svg {
+        stroke: var(--color-gray-600);
+        height: 2.5rem;
+        width: auto;
+      }
+    }
+  }
+}

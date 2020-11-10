@@ -1,0 +1,11 @@
+.dashboard {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  //   background-color: var(--color-gray-200);
+
+  &__content {
+    width: 100%;
+    padding: 3rem;
+  }
+}

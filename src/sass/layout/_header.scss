@@ -1,0 +1,204 @@
+.headers {
+  grid-column: full-start/full-end;
+}
+
+.header1 {
+  width: 100%;
+  background-color: white;
+  &__container {
+    padding: 2.4rem;
+    max-width: 128rem;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    @include respond(tab-small) {
+      grid-template-columns: 1fr max-content 2fr;
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__logo {
+    height: 4rem;
+    width: 4rem;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    @include respond(phone) {
+      display: none;
+    }
+    & > * {
+      cursor: pointer;
+
+      &:not(:first-child) {
+        margin-left: 3rem;
+      }
+    }
+  }
+  &__menu-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & > * {
+      margin-left: 1rem;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__mobile-menu {
+    display: none;
+    @include respond(phone) {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    svg {
+      display: block;
+      height: 4rem;
+      width: 4rem;
+      color: var(--color-gray-400);
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      padding: 0.7rem;
+      cursor: pointer;
+      border-radius: 0.6rem;
+      &:hover {
+        color: var(--color-gray-500);
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
+}
+
+.header1-modal {
+  display: none;
+  @include respond(phone) {
+    display: block;
+  }
+  &__container {
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    border-radius: 0.8rem;
+  }
+  position: absolute;
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+  transform-origin: top right;
+
+  z-index: 100;
+  padding: 1rem;
+  top: 1rem;
+  &__exit {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    color: var(--color-gray-400);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    &:hover {
+      color: var(--color-gray-500);
+      background-color: var(--color-gray-100);
+    }
+  }
+
+  &-animations {
+    &-enter {
+      opacity: 0;
+      transform: scale(0);
+      // width: 95vw;
+    }
+    // &-enter-active {
+    //   transform: scale(0.95);
+    // }
+    &-enter-done {
+      opacity: 1;
+
+      transform: scale(1);
+    }
+    &-exit {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &-exit-active {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+  &__top {
+    padding-top: 2rem;
+    padding-bottom: 2.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__features {
+    margin-top: 2rem;
+    display: grid;
+    row-gap: 0.8rem;
+    margin: 0 1rem;
+  }
+  &__feature {
+    cursor: pointer;
+    display: flex;
+    padding: 1.2rem;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      padding: 0;
+      margin-right: 0.6rem;
+    }
+
+    p {
+    }
+    &:focus {
+      background-color: var(--color-gray-50);
+      border: none;
+      outline: none;
+      border-radius: 0.6rem;
+    }
+  }
+  &__bottom {
+    border-top: 2px solid var(--color-gray-50);
+    padding: 2.4rem 2rem;
+  }
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1.6rem;
+    column-gap: 3.2rem;
+    & > * {
+      transition: all 0.15s ease-in-out;
+      &:hover {
+        color: var(--color-gray-700);
+      }
+    }
+  }
+  &__buttons {
+    margin-top: 2.4rem;
+  }
+  &__sign-in {
+    margin-top: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    & > * {
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

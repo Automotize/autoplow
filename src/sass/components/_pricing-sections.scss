@@ -1,0 +1,107 @@
+.pricing-sections-comparison-table {
+  table {
+    font-size: 1.4rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    // table-layout: fixed;
+    table-layout: auto;
+    border-collapse: collapse;
+  }
+
+  table caption {
+    font-size: 1.5em;
+    margin: 0.5em 0 0.75em;
+  }
+
+  table tr {
+    &:first-child {
+      border-top: none;
+    }
+    border: 1px solid var(--color-gray-300);
+    border-left: none;
+    border-right: none;
+    padding: 0.35em;
+  }
+
+  table th,
+  table td {
+    padding: 1.5rem;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  table th {
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    background-color: var(--color-gray-200);
+    color: var(--color-gray-600);
+  }
+
+  @include respond(tab-small) {
+    table {
+      box-shadow: none;
+    }
+
+    table caption {
+      font-size: 1.3em;
+    }
+
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    table tr {
+      // border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: 0.625em;
+    }
+
+    table td {
+      // border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+      margin-right: 0;
+      & > * {
+        margin-right: 0;
+      }
+    }
+
+    table td::before {
+      /*
+          * aria-label has no advantage, it won't be read inside a table
+          content: attr(aria-label);
+          */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    // table td:last-child {
+    //   border-bottom: 0;
+    // }
+  }
+
+  .table {
+    &__link {
+      text-decoration: none;
+      color: var(--color-indigo-600);
+      font-weight: 600;
+    }
+  }
+}

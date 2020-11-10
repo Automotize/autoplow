@@ -1,0 +1,12 @@
+.radio-button-group {
+  border: none;
+  display: grid;
+  row-gap: 1.6rem;
+  &__item {
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 1.2rem;
+    }
+  }
+}

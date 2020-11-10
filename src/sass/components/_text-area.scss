@@ -1,0 +1,54 @@
+.text-area {
+  display: flex;
+  flex-direction: column;
+  &__text-area {
+    line-height: var(--leading-5);
+    width: 100%;
+    display: block;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    font-family: inherit;
+    font-size: var(--text-sm);
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
+      border-color: #a4cafe;
+    }
+    &::placeholder {
+      color: var(--color-gray-400);
+    }
+  }
+  label {
+    color: var(--color-gray-700);
+    line-height: var(--leading-5);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    display: block;
+    &.text-area__corner-hint {
+      color: var(--color-gray-500);
+      font-weight: 400;
+    }
+  }
+
+  p {
+    color: var(--color-gray-500);
+    font-size: var(--text-sm);
+    margin-top: 0.8rem;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    margin-top: 0.4rem;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+}

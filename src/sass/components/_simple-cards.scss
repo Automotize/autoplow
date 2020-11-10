@@ -1,0 +1,77 @@
+.simple-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+}
+
+.simple-card {
+  background-color: white;
+  display: grid;
+  height: 6.4rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  grid-template-columns: 6.4rem 1fr 4rem;
+  &__icon {
+    width: 6.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: var(--color-gray-400);
+
+    display: block;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    transition: 0.15s all ease-in-out;
+  }
+  &__title {
+    cursor: pointer;
+    p {
+      transition: 0.15s all ease-in-out;
+      &:hover {
+        color: var(--color-gray-600) !important;
+      }
+    }
+  }
+  &__button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    &:hover {
+      svg {
+        color: var(--color-gray-500);
+      }
+    }
+    &:focus {
+      svg {
+        color: var(--color-gray-500);
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-gray-100);
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        z-index: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 1.4rem;
+  display: block;
+
+  &__input {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+
+    border: 1px solid var(--color-gray-400);
+    box-shadow: 0rem 0.2rem 0rem rgba(0, 0, 0, 0.05);
+    // position: relative;
+    outline-color: var(--color-blue-200);
+    margin-bottom: 2rem;
+
+    &::placeholder {
+      color: var(--color-gray-500);
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+    display: block;
+
+    color: var(--color-gray-700);
+  }
+  &__half {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    // add if necessary
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    display: inline-block;
+    color: black;
+  }
+  &__checkbox-text {
+    margin-left: 1rem;
+    display: inline-block;
+    color: var(--color-gray-900);
+  }
+
+  &__button {
+    padding: 1rem 1.6rem;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: var(--color-indigo-600);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-indigo-500);
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2rem;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-auto-flow: row;
+    }
+  }
+}

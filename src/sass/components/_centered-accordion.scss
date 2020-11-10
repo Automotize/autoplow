@@ -1,0 +1,41 @@
+.centered-accordion {
+  padding: 6.4rem 3.2rem;
+  margin: auto;
+
+  @include respond(phone) {
+    padding: 4.8rem 1.6rem;
+  }
+
+  &__container {
+    max-width: 76.8rem;
+    margin: 0 auto;
+  }
+  &__content {
+    margin-top: 2.4rem;
+    border-top: 2px solid currentColor;
+    & > * {
+      cursor: pointer;
+      border-bottom: 2px solid currentColor;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  &__item {
+    padding: 2.4rem 0;
+    position: relative;
+  }
+  &__description {
+    margin-top: 0.8rem;
+  }
+  p {
+    max-width: 90%;
+  }
+  svg {
+    position: absolute;
+    top: 2.4rem;
+    right: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

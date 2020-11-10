@@ -1,0 +1,34 @@
+.text {
+  // font-weight: 600;
+
+  &--center {
+    text-align: center;
+  }
+  &--italic {
+    font-style: italic;
+  }
+
+  &--inline {
+    display: inline;
+  }
+
+  &--xxs {
+    font-size: var(--text-xxs);
+  }
+  &--xs {
+    font-size: var(--text-xs);
+  }
+  &--sm {
+    font-size: var(--text-sm);
+  }
+  &--base {
+    font-size: var(--text-base);
+  }
+  &--lg {
+    font-size: var(--text-lg);
+  }
+  &--xl {
+    font-size: var(--text-xl);
+  }
+  // color: black;
+}

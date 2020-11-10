@@ -1,0 +1,103 @@
+.simple-toggle {
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  width: 4.4rem;
+  position: relative;
+  height: 2.4rem;
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-width: 2px;
+  border-radius: 9999px;
+  border-color: transparent;
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    border-radius: 9999px;
+    background-color: white;
+    width: 2rem;
+    display: inline-block;
+    height: 2rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-in-out;
+  }
+  &--on {
+    span {
+      left: 95% !important;
+      transform: translateY(-50%) translateX(-100%);
+    }
+  }
+  &--off {
+    background-color: var(--color-gray-200);
+  }
+  svg {
+    fill: currentColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.8rem;
+    stroke-width: 2rem;
+    // width: 0.7rem;
+  }
+  &--focus {
+    box-shadow: 0 0 0 3px rgba(118, 169, 250, 0.45);
+  }
+}
+
+.short-toggle {
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  width: 3.8rem;
+  position: relative;
+  height: 1.6rem;
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-width: 2px;
+  border-radius: 9999px;
+  border-color: transparent;
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-radius: 9999px;
+    background-color: white;
+    width: 2rem;
+    display: inline-block;
+    height: 2rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-in-out;
+  }
+  &--on {
+    span {
+      left: 100% !important;
+      transform: translateY(-50%) translateX(-100%);
+    }
+  }
+  &--off {
+    background-color: var(--color-gray-200);
+  }
+  svg {
+    fill: currentColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.8rem;
+    stroke-width: 2rem;
+    // width: 0.7rem;
+  }
+  &--focus {
+    span {
+      box-shadow: 0 0 0 3px rgba(118, 169, 250, 0.45);
+    }
+  }
+}

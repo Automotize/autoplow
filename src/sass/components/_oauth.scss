@@ -1,0 +1,23 @@
+.oauth {
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-gray-500);
+    transition: fill 0.2s ease-in-out;
+  }
+  &__button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: 1px solid var(--color-gray-400);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      & > * {
+        fill: var(--color-gray-400);
+      }
+    }
+  }
+}

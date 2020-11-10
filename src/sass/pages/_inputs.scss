@@ -1,0 +1,8 @@
+.inputs {
+  grid-column: center-start/center-end;
+  margin-top: 5rem;
+  &__container {
+    max-width: 32rem;
+    margin: auto;
+  }
+}

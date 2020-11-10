@@ -1,0 +1,8 @@
+.grid-lists {
+  grid-column: center-start/center-end;
+  margin-top: 5rem;
+  &__container {
+    max-width: 80rem;
+    margin: auto;
+  }
+}

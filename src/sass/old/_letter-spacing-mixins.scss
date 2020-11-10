@@ -1,0 +1,22 @@
+@mixin letter-spacing() {
+  &--tracking {
+    &-tighter {
+      letter-spacing: var(--tracking-tighter);
+    }
+    &-tight {
+      letter-spacing: var(--tracking-tight);
+    }
+    &-normal {
+      letter-spacing: var(--tracking-normal);
+    }
+    &-wide {
+      letter-spacing: var(--tracking-wide);
+    }
+    &-wider {
+      letter-spacing: var(--tracking-wider);
+    }
+    &-widest {
+      letter-spacing: var(--tracking-widest);
+    }
+  }
+}

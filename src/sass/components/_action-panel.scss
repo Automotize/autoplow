@@ -1,0 +1,47 @@
+.action-panel {
+  background-color: white;
+  padding: 2rem 1.6rem;
+  box-shadow: 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  max-width: 76.8rem;
+  margin: 0 auto;
+
+  &--gray {
+    background-color: var(--color-gray-50);
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__title {
+    color: var(--color-gray-900);
+    line-height: var(--leading-5);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+  }
+
+  &__description {
+    max-width: 57.6rem;
+    line-height: var(--leading-5);
+    color: var(--color-gray-500);
+    font-size: var(--text-sm);
+    font-weight: 400;
+  }
+  &__bottom {
+    margin-top: 2rem;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    &--bottom {
+      justify-content: flex-end;
+    }
+    &--top {
+      justify-content: flex-start;
+    }
+  }
+}
