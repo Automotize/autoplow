@@ -52,39 +52,39 @@ export const data = [
 export const data2 = [
   {
     id: '1',
-    question: "What's the best thing about Switzerland?",
+    question: "How is it Powered?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "All Auto Plow models are powered by gasoline, which can be purchased at a local store, each Auto Plow model is very fuel efficient (the more advanced models require more fuel).",
   },
   {
     id: '2',
-    question: 'How do you make holy water?',
+    question: 'How Long Does it Last on a Full Tank?',
     answer:
-      'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut tempora vitae odio inventore fuga aliquam nostrum quod porro. Delectus quia facere id sequi expedita natus.',
+      'Fill up the Auto Plow once and it will last you the whole season!',
   },
   {
     id: '3',
-    question: 'What do you call someone with no body and no nose?',
+    question: 'How Do I Maintain it?',
     answer:
-      'Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.',
+      'The Auto Plow requires very little maintenance. You simply have to ensure that the plow itself is clear of snow after each use to make sure you get the maximum performance.',
   },
   {
     id: '4',
-    question: 'Why do you never see elephants hiding in trees?',
+    question: 'Is There a Warranty?',
     answer:
-      "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "All Auto Plow models come with a standard 90-day warrantee where we will repair or replace your device at no charge! Simply bring it to the place of purchase or ship it straight it to the address listed on the box.",
   },
   {
     id: '5',
-    question: "Why can't you hear a pterodactyl go to the bathroom?",
+    question: "How Should I Prepare my Driveway Before the Auto Plow Cleans?",
     answer:
-      'Because the pee is silent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quas voluptatibus ex culpa ipsum, aspernatur blanditiis fugiat ullam magnam suscipit deserunt illum natus facilis atque vero consequatur! Quisquam, debitis error.',
+      "To prepare your driveway, simply move your cars into the garage or the street so that the Auto Plow doesn't make contact with it.",
   },
   {
     id: '6',
-    question: 'Why did the invisible man turn down the job offer?',
+    question: 'How Long Will It Last Me?',
     answer:
-      "He couldn't see himself doing it. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perspiciatis officiis corrupti tenetur. Temporibus ut voluptatibus, perferendis sed unde rerum deserunt eius.",
+      "The Autoplow is built for longevity, barring any external damage, the Autoplow should last you around ten years!",
   },
 ];
 
