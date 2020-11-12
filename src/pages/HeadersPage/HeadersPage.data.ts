@@ -1,51 +1,51 @@
 export const data = [
   {
     id: '1',
-    title: 'Invite team members',
+    title: 'Convenient',
     description:
-      'Get the best plow in the marketGet the best plow in the market',
+      "Don't waste anytime doing a tedious and difficult chore, let the Autoplow take care of it for you!",
   },
   {
     id: '2',
-    title: 'Notifications',
+    title: 'Portable',
     description:
-      'Ornare donec rhoncus vitae nisl velit, neque, mauris dictum duis. Nibh urna non parturient.',
+      'Very easy to store, can easily fit in your garage and if you purchase the Lite model, you can even put it in your closet!',
   },
   {
     id: '3',
-    title: 'List View',
+    title: 'Powerful',
     description:
-      'Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis. Dictum lacus.',
+      'The Autoplow will clear your driveway without even breaking a sweat!',
   },
   {
     id: '4',
-    title: 'Boards',
+    title: 'Maintainable',
     description:
-      'Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque. Mauris sagittis.',
+      "The Autoplow practically takes care of itself! Fuel it up once, and it's good for the whole season!",
   },
   {
     id: '5',
-    title: 'Keyboard shortcuts',
+    title: 'Affordable',
     description:
-      'Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis nec. In at risus odio.',
+      "We cater to all of our customers' needs, including financial, as we have three models for customers to choose from. Lite, Standard, and Premium",
   },
   {
     id: '6',
-    title: 'Reporting',
+    title: 'Safe',
     description:
-      'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
+      'We have taken every safety precaution possible to ensure that you and your belongings will not be hurt or damaged by the Autoplow thanks to its top of the line censors',
   },
   {
     id: '7',
-    title: 'Calendars',
+    title: 'Long-Lasting',
     description:
-      'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
+      'The Autoplow is built for longevity and will be clearing your driveways efficiently for years to come!',
   },
   {
     id: '8',
-    title: 'Mobile app',
+    title: 'Support',
     description:
-      'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
+      'If you have any issue with the Autoplow, contact us and we will immediately reach out to you to ensure that your Autoplow is working at its best again',
   },
 ];
 
