@@ -93,42 +93,42 @@ export const data3 = [
     id: '1',
     image:
       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    name: 'Lindsay Walton',
+    name: 'Azan Mubashar',
     jobTitle: 'Front-end Developer',
   },
   {
     id: '2',
     image:
       'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    name: 'Lindsay Walton',
+    name: 'Adam Jasniewicz',
     jobTitle: 'Front-end Developer',
   },
   {
     id: '3',
     image:
       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    name: 'Lindsay Walton',
+    name: 'Habib Ayoub',
     jobTitle: 'Front-end Developer',
   },
   {
     id: '4',
     image:
       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    name: 'Lindsay Walton',
+    name: 'Jeremie Barhabazi',
     jobTitle: 'Front-end Developer',
   },
   {
     id: '5',
     image:
       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    name: 'Lindsay Walton',
+    name: 'Mouad Ouroui',
     jobTitle: 'Front-end Developer',
   },
   {
     id: '6',
     image:
       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    name: 'Lindsay Walton',
+    name: 'Raff Bougherara',
     jobTitle: 'Front-end Developer',
   },
 ];

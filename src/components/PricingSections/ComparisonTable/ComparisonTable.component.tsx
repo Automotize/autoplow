@@ -11,8 +11,8 @@ const ComparisonTable = () => {
           <thead>
             <tr>
               <th>Plans</th>
-              <th>Basic</th>
-              <th>Essential</th>
+              <th>Lite</th>
+              <th>Standard</th>
               <th>Premium</th>
             </tr>
           </thead>

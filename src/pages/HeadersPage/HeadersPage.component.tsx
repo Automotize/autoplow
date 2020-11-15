@@ -17,12 +17,12 @@ const HeadersPage = () => {
       <SimpleHeader />
       <GridList
         title="Autoplow"
-        description="New description"
+        description="The new revolutionary machine that will change your life!"
         color="gray"
         data={data}
       />
       <CenteredAccordion
-        title="Frequently asked questions"
+        title="Frequently Asked Questions"
         data={data2}
         color="gray"
       />
@@ -34,7 +34,7 @@ const HeadersPage = () => {
       <div className="u-margin-top-medium" />
       <LargeImages
         title="Our Team"
-        description="Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales. Tempus quis et."
+        description="Meet the people behind Autoplow!"
         color="indigo"
         data={data3}
       />

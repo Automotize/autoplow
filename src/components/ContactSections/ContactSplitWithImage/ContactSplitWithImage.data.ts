@@ -1,18 +1,18 @@
 export const data = [
   {
     id: '1',
-    text: 'Less than $25K',
+    text: 'Less than $300',
   },
   {
     id: '2',
-    text: '$25K - $50K',
+    text: '$400 - $500',
   },
   {
     id: '3',
-    text: '$50K - $100K',
+    text: '$500 - $1000',
   },
   {
     id: '4',
-    text: '$100K+',
+    text: '$1000+',
   },
 ];

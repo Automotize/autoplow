@@ -152,7 +152,7 @@ const C4WithCompanyMission = () => {
         </div>
         <div className="footer1__bottom">
           <Text size="base" lineSpacing={6} color="gray-400">
-            © 2020 Workflow, Inc. All rights reserved.
+            © 2020 Autoplow, Inc. All rights reserved.
           </Text>
         </div>
       </div>
