@@ -5,6 +5,9 @@
 .header1 {
   width: 100%;
   background-color: white;
+  a {
+    text-decoration: none;
+  }
   &__container {
     padding: 2.4rem;
     max-width: 128rem;
@@ -200,5 +203,8 @@
         margin-right: 1rem;
       }
     }
+  }
+  a {
+    text-decoration: none;
   }
 }

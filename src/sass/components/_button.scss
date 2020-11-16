@@ -82,6 +82,11 @@
       font-size: var(--text-base);
       line-height: var(--leading-6);
     }
+    &-xxl {
+      padding: 1.6rem 4rem;
+      font-size: var(--text-base);
+      line-height: var(--leading-6);
+    }
   }
   &--full {
     width: 100%;

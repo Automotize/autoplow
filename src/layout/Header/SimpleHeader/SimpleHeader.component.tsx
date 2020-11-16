@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import { CSSTransition } from 'react-transition-group';
 
+import { Link } from 'react-router-dom';
+
 import { FiMenu } from 'react-icons/fi';
 import { VscClose } from 'react-icons/vsc';
 import {
@@ -21,18 +23,24 @@ const SimpleHeader = () => {
   return (
     <header className="header1">
       <div className="header1__container">
-        <img
-          src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg"
-          alt=""
-          className="header1__logo"
-        />
+        <Link to="/">
+          <img
+            src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg"
+            alt=""
+            className="header1__logo"
+          />
+        </Link>
         <div className="header1__menu">
-          <Text size="sm" color="gray-500" lineSpacing={6} fontWeight={500}>
-            Solutions
-          </Text>
-          <Text size="sm" color="gray-500" lineSpacing={6} fontWeight={500}>
-            Pricing
-          </Text>
+          <Link to="/contact">
+            <Text size="sm" color="gray-500" lineSpacing={6} fontWeight={500}>
+              Contact
+            </Text>
+          </Link>
+          <Link to="/pricing">
+            <Text size="sm" color="gray-500" lineSpacing={6} fontWeight={500}>
+              Pricing
+            </Text>
+          </Link>
           <Text size="sm" color="gray-500" lineSpacing={6} fontWeight={500}>
             Docs
           </Text>
@@ -44,7 +52,7 @@ const SimpleHeader = () => {
           <Button bg="white" color="gray-500" size="sm">
             Sign In
           </Button>
-          <Button bg="indigo-600" color="white" size="sm">
+          <Button bg="blue-600" color="white" size="sm">
             Sign Up
           </Button>
         </div>
@@ -62,11 +70,13 @@ const SimpleHeader = () => {
           <div className="header1-modal__container">
             <div className="header1-modal__top">
               <div className="header1-modal__items">
-                <img
-                  src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg"
-                  alt=""
-                  className="header1__logo"
-                />
+                <Link to="/">
+                  <img
+                    src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg"
+                    alt=""
+                    className="header1__logo"
+                  />
+                </Link>
                 <VscClose
                   className="header1-modal__exit"
                   onClick={() => setModal(!modal)}
@@ -75,7 +85,7 @@ const SimpleHeader = () => {
             </div>
             <div className="header1-modal__features">
               <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineChartBar className="color-indigo-600" />
+                <HiOutlineChartBar className="color-blue-600" />
                 <Text
                   size="base"
                   fontWeight={500}
@@ -86,7 +96,7 @@ const SimpleHeader = () => {
                 </Text>
               </div>
               <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineCursorClick className="color-indigo-600" />
+                <HiOutlineCursorClick className="color-blue-600" />
                 <Text
                   size="base"
                   fontWeight={500}
@@ -97,7 +107,7 @@ const SimpleHeader = () => {
                 </Text>
               </div>
               <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineShieldCheck className="color-indigo-600" />
+                <HiOutlineShieldCheck className="color-blue-600" />
                 <Text
                   size="base"
                   fontWeight={500}
@@ -108,7 +118,7 @@ const SimpleHeader = () => {
                 </Text>
               </div>
               <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineViewGrid className="color-indigo-600" />
+                <HiOutlineViewGrid className="color-blue-600" />
                 <Text
                   size="base"
                   fontWeight={500}
@@ -119,7 +129,7 @@ const SimpleHeader = () => {
                 </Text>
               </div>
               <div className="header1-modal__feature" tabIndex={1}>
-                <HiRefresh className="color-indigo-600" />
+                <HiRefresh className="color-blue-600" />
                 <Text
                   size="base"
                   fontWeight={500}
@@ -132,22 +142,26 @@ const SimpleHeader = () => {
             </div>
             <div className="header1-modal__bottom">
               <div className="header1-modal__menu">
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Pricing
-                </Text>
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Docs
-                </Text>
+                <Link onClick={() => setModal(!modal)} to="/pricing">
+                  <Text
+                    size="base"
+                    lineSpacing={6}
+                    fontWeight={500}
+                    color="gray-900"
+                  >
+                    Pricing
+                  </Text>
+                </Link>
+                <Link onClick={() => setModal(!modal)} to="/contact">
+                  <Text
+                    size="base"
+                    lineSpacing={6}
+                    fontWeight={500}
+                    color="gray-900"
+                  >
+                    Contact
+                  </Text>
+                </Link>
                 <Text
                   size="base"
                   lineSpacing={6}
@@ -198,14 +212,14 @@ const SimpleHeader = () => {
                 </Text>
               </div>
               <div className="header1-modal__buttons">
-                <Button full={true} bg="indigo-600" color="white">
+                <Button full={true} bg="blue-600" color="white">
                   Sign Up
                 </Button>
                 <div className="header1-modal__sign-in">
                   <Text size="base" fontWeight={500} color="gray-500">
                     Existing Customer?
                   </Text>
-                  <Text size="base" fontWeight={500} color="indigo-600">
+                  <Text size="base" fontWeight={500} color="blue-600">
                     Sign In
                   </Text>
                 </div>

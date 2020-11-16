@@ -1,3 +1,3 @@
-import ComparsionTable from './ComparisonTable';
+import ThreeTiers from './ThreeTiers';
 
-export { ComparsionTable };
+export { ThreeTiers };

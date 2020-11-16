@@ -1,3 +1,3 @@
-import C4WithCompanyMission from './C4WithCompanyMission';
+import SocialsOnly from './SocialsOnly';
 
-export { C4WithCompanyMission };
+export { SocialsOnly };

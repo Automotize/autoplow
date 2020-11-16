@@ -22,8 +22,10 @@
 @import 'components/form';
 @import 'components/grid-list';
 @import 'components/heading';
+@import 'components/hero-sections';
 @import 'components/input';
 @import 'components/list-with-description';
+@import 'components/newsletter-sections';
 @import 'components/notifications';
 @import 'components/oauth';
 @import 'components/pricing-sections';
@@ -33,6 +35,8 @@
 @import 'components/simple-cards';
 @import 'components/simple-table';
 @import 'components/small-contact-cards';
+@import 'components/stats';
+@import 'components/swiper';
 @import 'components/team-sections';
 @import 'components/text-area';
 @import 'components/text';
@@ -44,9 +48,11 @@
 @import 'pages/action-panels';
 @import 'pages/alerts';
 @import 'pages/badges';
+@import 'pages/contact-page';
 @import 'pages/dashboard';
 @import 'pages/grid-lists';
 @import 'pages/homepage';
+@import 'pages/page';
 @import 'pages/inputs';
 @import 'pages/radio-groups';
 @import 'pages/toggles';

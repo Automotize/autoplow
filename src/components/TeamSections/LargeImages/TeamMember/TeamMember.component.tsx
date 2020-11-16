@@ -6,7 +6,13 @@ import Text from '../../../Text';
 
 import { Props } from './TeamMember.types';
 
-const TeamMember: React.FC<Props> = ({ name, jobTitle, image, color }) => {
+const TeamMember: React.FC<Props> = ({
+  name,
+  jobTitle,
+  image,
+  color,
+  linkedInLink,
+}) => {
   return (
     <div className="team-sections-large-images__team-member">
       <img src={image} className="team-sections-large-images__image" />
@@ -17,10 +23,7 @@ const TeamMember: React.FC<Props> = ({ name, jobTitle, image, color }) => {
         {jobTitle}
       </Text>
       <div className="team-sections-large-images__icons">
-        <a href="">
-          <FaTwitter className="color-gray-400" />
-        </a>
-        <a href="">
+        <a href={linkedInLink} target="_blank">
           <FaLinkedin className="color-gray-400" />
         </a>
       </div>

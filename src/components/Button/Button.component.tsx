@@ -45,7 +45,7 @@ const Button: React.FC<Props> = ({
       })}
     >
       {iconPosition === 'left' && Icon ? <Icon /> : null}
-      {children}
+      <p>{children}</p>
       {iconPosition === 'right' && Icon ? <Icon /> : null}
     </button>
   );

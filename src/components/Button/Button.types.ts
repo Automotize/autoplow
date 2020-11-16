@@ -11,7 +11,7 @@ export type styleSwitchProps = {
   color?: styleTypes['color'];
   bg?: styleTypes['bg'];
   inline?: boolean;
-  size?: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
+  size?: 'xs' | 'sm' | 'base' | 'lg' | 'xl' | 'xxl';
   borderSize?: styleTypes['borderSize'];
   borderColor?: styleTypes['borderColor'];
   borderStyle?: styleTypes['borderStyle'];

@@ -1,107 +1,148 @@
-.pricing-sections-comparison-table {
-  table {
-    font-size: 1.4rem;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    // table-layout: fixed;
-    table-layout: auto;
-    border-collapse: collapse;
+.pricing-sections-three-tiers {
+  background: linear-gradient(
+    to bottom,
+    var(--color-gray-900) 0% 75%,
+    white 75%
+  );
+  @include respond(tab-land) {
+    background: linear-gradient(
+      to bottom,
+      var(--color-gray-900) 0% 83%,
+      white 83%
+    );
   }
-
-  table caption {
-    font-size: 1.5em;
-    margin: 0.5em 0 0.75em;
-  }
-
-  table tr {
-    &:first-child {
-      border-top: none;
+  padding: 4.8rem 2.4rem;
+  &__tiers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond(tab-land) {
+      flex-direction: column;
     }
-    border: 1px solid var(--color-gray-300);
-    border-left: none;
-    border-right: none;
-    padding: 0.35em;
-  }
-
-  table th,
-  table td {
-    padding: 1.5rem;
-
-    &:last-child {
-      text-align: right;
-    }
-  }
-
-  table th {
-    font-size: 1.3rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: 600;
-    background-color: var(--color-gray-200);
-    color: var(--color-gray-600);
-  }
-
-  @include respond(tab-small) {
-    table {
-      box-shadow: none;
-    }
-
-    table caption {
-      font-size: 1.3em;
-    }
-
-    table thead {
-      border: none;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-
-    table tr {
-      // border-bottom: 3px solid #ddd;
-      display: block;
-      margin-bottom: 0.625em;
-    }
-
-    table td {
-      // border-bottom: 1px solid #ddd;
-      display: block;
-      font-size: 0.8em;
-      text-align: right;
-      margin-right: 0;
-      & > * {
-        margin-right: 0;
+    margin-top: 6.4rem;
+    // padding-bottom: 4.8rem;
+    & > * {
+      height: 100%;
+      @include respond(tab-land) {
+        &:not(:first-child) {
+          margin-top: 4rem;
+        }
       }
     }
-
-    table td::before {
-      /*
-          * aria-label has no advantage, it won't be read inside a table
-          content: attr(aria-label);
-          */
-      content: attr(data-label);
-      float: left;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    // table td:last-child {
-    //   border-bottom: 0;
-    // }
   }
+  &__description {
+    margin: 0 auto;
 
-  .table {
-    &__link {
-      text-decoration: none;
-      color: var(--color-indigo-600);
-      font-weight: 600;
+    margin-top: 2rem;
+    max-width: 89.6rem;
+  }
+  &__tier-pricing {
+    text-align: center;
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 6.4rem;
+      font-weight: 800;
+    }
+  }
+  &__sign {
+    align-self: flex-start;
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  &__tier-features {
+    list-style: none;
+    & > * {
+      &:not(:first-child) {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+  &__tier-feature {
+    svg {
+      color: var(--color-green-500);
+      height: 2.4rem;
+      width: 2.4rem;
+      margin-right: 1.2rem;
+    }
+    display: flex;
+  }
+  &__interval {
+    color: var(--color-gray-500);
+    line-height: var(--leading-5);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1.2rem;
+  }
+  &__small-tier {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.8rem;
+    max-width: 44.8rem;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+
+    @include respond(big-desktop) {
+      max-width: 40rem;
+      margin: 0 3rem;
+    }
+  }
+  &__large-tier {
+    z-index: 10;
+    background-color: white;
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.8rem;
+    max-width: 51.2rem;
+    width: 100%;
+    // overflow: hidden;
+    border-width: 2px;
+    border-style: solid;
+    // border: 2px solid var(--color-indigo-600);
+    position: relative;
+    margin: 0 auto;
+
+    @include respond(big-desktop) {
+      margin: 0 3rem;
+    }
+  }
+  &__top {
+    padding: 4rem 2.4rem;
+  }
+  &__badge {
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: var(--text-sm);
+    letter-spacing: var(--tracking-wider);
+    padding: 0.4rem 1.6rem;
+    line-height: var(--leading-5);
+    font-weight: 600;
+    border-radius: 9999px;
+    width: max-content;
+  }
+  &__bottom {
+    border-top: 3px solid var(--color-gray-100);
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-gray-50);
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+    button {
+      margin-top: 3.2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
   }
 }

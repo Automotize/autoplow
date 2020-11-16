@@ -3,7 +3,9 @@ import React from 'react';
 // import react router components
 
 // importing general components (these components are necessary on every page)
-// import Header from './layout/Header';
+import { SimpleHeader } from './layout/Header';
+import { SocialsOnly } from './layout/Footer';
+
 // import Footer from './layout/Footer';
 
 // import Modal from './components/Modal';
@@ -37,15 +39,13 @@ export class App extends React.Component<PropsType, StateType> {
     const { match } = this.props;
     return (
       <>
-        {/* Modal will be displayed on every page */}
-        {/* <Modal /> */}
-        {/* Header will be displayed on every page */}
-        {/* <Header /> */}
+        <div className="page">
+          <SimpleHeader />
 
-        <AppRoutes match={match} />
+          <AppRoutes match={match} />
 
-        {/* Footer will be displayed on every page */}
-        {/* <Footer /> */}
+          <SocialsOnly />
+        </div>
       </>
     );
   }
