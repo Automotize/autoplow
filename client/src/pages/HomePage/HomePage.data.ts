@@ -98,7 +98,7 @@ export const data3 = [
     image: azan,
     name: 'Azan Mubashar',
     jobTitle: 'Front-end Developer',
-    linkedInLink: '',
+    linkedInLink: 'https://www.linkedin.com/in/azan-mubashar-b7aa201b7/',
   },
   {
     id: '2',
