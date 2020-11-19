@@ -16,7 +16,6 @@ const ThreeTiers: React.FC<Props> = ({
   tier1,
   tier2,
   tier3,
-  interval,
   color,
 }) => {
   return (
@@ -66,7 +65,7 @@ const ThreeTiers: React.FC<Props> = ({
                 {tier1.price}
 
                 <span className="pricing-sections-three-tiers__interval">
-                  /{interval}
+                  
                 </span>
               </h1>
             </div>
@@ -120,7 +119,7 @@ const ThreeTiers: React.FC<Props> = ({
                 <span className="pricing-sections-three-tiers__sign">$</span>
                 {tier2.price}
                 <span className="pricing-sections-three-tiers__interval">
-                  /{interval}
+              
                 </span>
               </h1>
             </div>
@@ -167,7 +166,7 @@ const ThreeTiers: React.FC<Props> = ({
                 <span className="pricing-sections-three-tiers__sign">$</span>
                 {tier3.price}
                 <span className="pricing-sections-three-tiers__interval">
-                  /{interval}
+                  
                 </span>
               </h1>
             </div>

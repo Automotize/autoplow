@@ -23,7 +23,7 @@ const ComparisonTable = () => {
                 <div>
                   <p>
                     <span>$9</span>
-                    <span>/mo</span>
+                    
                   </p>
                   <p>Quis suspendisse ut fermentum neque vivamus non tellus.</p>
                   <button>Buy Basic</button>
@@ -33,7 +33,7 @@ const ComparisonTable = () => {
                 <div>
                   <p>
                     <span>$29</span>
-                    <span>/mo</span>
+                    
                   </p>
                   <p>Quis suspendisse ut fermentum neque vivamus non tellus.</p>
                   <button>Buy Essential</button>
@@ -43,7 +43,7 @@ const ComparisonTable = () => {
                 <div>
                   <p>
                     <span>$59</span>
-                    <span>/mo</span>
+                    
                   </p>
                   <p>Quis suspendisse ut fermentum neque vivamus non tellus.</p>
                   <button>Buy Premium</button>

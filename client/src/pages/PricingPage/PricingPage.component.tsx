@@ -7,71 +7,71 @@ const PricingPage = () => {
     <ThreeTiers
       color="blue"
       title="Pricing"
-      subTitle="The right price for you, whoever you are"
-      description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum."
-      interval="month"
+      subTitle="Amazing prices for convenience!"
+      description="Find the best model suitable for you"
+      interval=""
       tier1={{
-        title: 'Hobby',
-        price: 79,
-        buttonText: 'Start your trial',
+        title: 'Lite',
+        price: 299,
+        buttonText: 'Order Now',
         features: [
           {
             id: '1',
-            text: 'Pariatur quod similique',
+            text: 'Better for smaller driveways!',
           },
           {
             id: '2',
-            text: 'Sapiente libero doloribus',
+            text: 'Lightweight and portable!',
           },
           {
             id: '3',
-            text: 'Vel ipsa esse repudiandae',
+            text: 'Sustains a longer battery life than other models!',
           },
         ],
       }}
       tier2={{
-        title: 'Growth',
-        price: 149,
-        buttonText: 'Start your trial',
+        title: 'Standard',
+        price: 499,
+        buttonText: 'Order Now',
         features: [
           {
             id: '1',
-            text: 'Quia rem est sed impedit magnam',
+            text: 'More than enough power for the average driveway!',
           },
           {
             id: '2',
-            text: 'Dolorem vero ratione voluptates',
+            text: 'Heavy-duty and can power through a very high level of snowfall!',
           },
           {
             id: '3',
-            text: 'Qui sed ab doloribus voluptatem dolore',
+            text: 'Self-sufficient as it takes care of your chores for you!',
           },
           {
             id: '4',
-            text: 'Laborum commodi molestiae id et fugiat',
+            text: 'Very convenient and energy efficient!',
           },
           {
             id: '5',
-            text: 'Nam ut ipsa nesciunt culpa modi dolor',
+            text: 'Very little maintenance required, it takes care of you!',
           },
         ],
       }}
       tier3={{
-        title: 'Scale',
-        price: 349,
-        buttonText: 'Start your trial',
+        title: 'Premium',
+        price: 799,
+        buttonText: 'Order Now',
         features: [
           {
             id: '1',
-            text: 'Pariatur quod similique',
+            text: 'Perfect for commercial properties!',
           },
           {
             id: '2',
-            text: 'Sapiente libero doloribus',
+            text: 'Can power through almost any amount of snow!',
           },
           {
             id: '3',
-            text: 'Vel ipsa esse repudiandae',
+            text: "Clears snow faster than any of our other models!",
           },
         ],
       }}
