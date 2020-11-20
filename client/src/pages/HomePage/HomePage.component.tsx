@@ -32,9 +32,9 @@ const HomePage = () => {
             image: image3,
           },
         ]}
-        title1={'Data to enrich your'}
-        title2={'online business'}
-        description="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+        title1={'Make your life'}
+        title2={'easier'}
+        description="Winters will never be easier!"
         button1="Get started"
         button2="Live demo"
       />
