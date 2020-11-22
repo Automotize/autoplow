@@ -25,7 +25,7 @@ const SimpleHeader = () => {
       <div className="header1__container">
         <Link to="/">
           <img
-            src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg"
+            src="Autoplow_logo.png"
             alt=""
             className="header1__logo"
           />
@@ -72,7 +72,7 @@ const SimpleHeader = () => {
               <div className="header1-modal__items">
                 <Link to="/">
                   <img
-                    src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg"
+                    src="Autoplow_logo.png"
                     alt=""
                     className="header1__logo"
                   />
