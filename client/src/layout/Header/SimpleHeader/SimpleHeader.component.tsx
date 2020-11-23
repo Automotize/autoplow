@@ -41,12 +41,6 @@ const SimpleHeader = () => {
               Pricing
             </Text>
           </Link>
-          <Text size="sm" color="gray-500" lineSpacing={6} fontWeight={500}>
-            Docs
-          </Text>
-          <Text size="sm" color="gray-500" lineSpacing={6} fontWeight={500}>
-            More
-          </Text>
         </div>
         <div className="header1__menu-buttons">
           <Button bg="white" color="gray-500" size="sm">
@@ -84,61 +78,6 @@ const SimpleHeader = () => {
               </div>
             </div>
             <div className="header1-modal__features">
-              <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineChartBar className="color-blue-600" />
-                <Text
-                  size="base"
-                  fontWeight={500}
-                  color="gray-900"
-                  lineSpacing={6}
-                >
-                  Analytics
-                </Text>
-              </div>
-              <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineCursorClick className="color-blue-600" />
-                <Text
-                  size="base"
-                  fontWeight={500}
-                  color="gray-900"
-                  lineSpacing={6}
-                >
-                  Engagement
-                </Text>
-              </div>
-              <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineShieldCheck className="color-blue-600" />
-                <Text
-                  size="base"
-                  fontWeight={500}
-                  color="gray-900"
-                  lineSpacing={6}
-                >
-                  Security
-                </Text>
-              </div>
-              <div className="header1-modal__feature" tabIndex={1}>
-                <HiOutlineViewGrid className="color-blue-600" />
-                <Text
-                  size="base"
-                  fontWeight={500}
-                  color="gray-900"
-                  lineSpacing={6}
-                >
-                  Integrations
-                </Text>
-              </div>
-              <div className="header1-modal__feature" tabIndex={1}>
-                <HiRefresh className="color-blue-600" />
-                <Text
-                  size="base"
-                  fontWeight={500}
-                  color="gray-900"
-                  lineSpacing={6}
-                >
-                  Automations
-                </Text>
-              </div>
             </div>
             <div className="header1-modal__bottom">
               <div className="header1-modal__menu">
@@ -162,54 +101,6 @@ const SimpleHeader = () => {
                     Contact
                   </Text>
                 </Link>
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Enterprise
-                </Text>
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Blog
-                </Text>
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Help Center
-                </Text>
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Guides
-                </Text>
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Security
-                </Text>
-                <Text
-                  size="base"
-                  lineSpacing={6}
-                  fontWeight={500}
-                  color="gray-900"
-                >
-                  Events
-                </Text>
               </div>
               <div className="header1-modal__buttons">
                 <Button full={true} bg="blue-600" color="white">

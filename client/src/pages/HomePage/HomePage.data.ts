@@ -2,6 +2,8 @@ import jeremie from '../../assets/Team/jeremie.jpg';
 import habib from '../../assets/Team/habib.jpg';
 import adam from '../../assets/Team/adam.jpg';
 import azan from '../../assets/Team/azan.jpeg';
+import mouad from '../../assets/Team/mouad.jpeg';
+import raff from '../../assets/Team/raff.png';
 
 export const data = [
   {
@@ -124,7 +126,7 @@ export const data3 = [
   {
     id: '5',
     image:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      mouad,
     name: 'Mouad Ouroui',
     jobTitle: 'Front-end Developer',
     linkedInLink: 'https://www.linkedin.com/in/mouad-ouroui',
@@ -132,7 +134,7 @@ export const data3 = [
   {
     id: '6',
     image:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      raff,
     name: 'Raff Bougherara',
     jobTitle: 'Front-end Developer',
   },
