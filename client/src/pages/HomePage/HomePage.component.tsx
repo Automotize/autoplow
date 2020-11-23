@@ -58,7 +58,7 @@ const HomePage = () => {
 
       <SimpleCard
         title="Needed by thousands of local Canadians"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium."
+        description=""
         stat1={{ title: '100%', description: 'Satisfaction guarantee' }}
         stat2={{ title: '24/7', description: 'Support' }}
         stat3={{ title: '90 day', description: 'Warranty' }}
